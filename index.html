@@ -4,14 +4,337 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chair Show</title>
+    <link rel="stylesheet" href="./css/style.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
-   <h1>Industrial Design Chairs</h1> 
-   <model-viewer src="./models/Avona.glb"
-              alt="Avona Chair"
-              ar
-              auto-rotate
-              camera-controls></model-viewer>
+
+    
+    <div class="hero" id="home">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#chairs">Chairs</a></li>
+                
+            </ul>
+        </nav>  
+
+    </div>
+    <div class="title">
+    <h1>Industrial Design Chairs</h1>
+    <div class="title">
+
+    <div class="gallery">
+
+        <div class="chair" id="chairs">
+            
+            <model-viewer src="./models/Onsilla.glb"
+                alt="Onsilla Chair"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                camera-controls
+                poster="/img/ONsilla-Camera4.png"  
+                max-camera-orbit="0deg 90deg"
+                min-camera-orbit="0 deg 0deg"
+                touch-action="pan-y" camera-orbit="40deg"
+                shadow-intensity="1">
+                <button class="Hotspot" slot="hotspot-1" data-position="0.3733646312054936m 0.7741231489687885m -0.022265445083012647m" data-normal="0.8815298464787379m -0.22548224666839345m -0.4148046361897934m" data-visibility-attribute="visible">
+                  <div class="HotspotAnnotation">Velvet Fabric</div>
+                </button>
+                <button class="Hotspot" slot="hotspot-2" data-position="0.3169164856116343m 0.025180459448249204m 0.04920677078958269m" data-normal="0.04141909525581436m 0.9982035080838209m 0.043292204810375094m" data-visibility-attribute="visible">
+                  <div class="HotspotAnnotation">Wooden Shelving</div>
+                </button>
+                <button slot="ar-button" id="ar-button">
+                View in your space
+                </button>
+            </model-viewer>
+
+            </model-viewer>
+            
+
+            <div class="container">
+                <h3>On-silla Chair</h3>
+                <p>The Onsilla is more than just a piece of furniture; it's a statement of mindful living. Elegant and versatile addition to office, lounges or a space where relaxation and style converge.</p>
+                <a href="#Onsilla">More Details</a>
+            </div>
+        </div>
+
+        <div class="chair" id="chairs">
+            
+            <model-viewer src="./models/Picard.glb"
+                alt="Picard Chair"
+                ar 
+                ar-modes="webxr scene-viewer quick-look" 
+                camera-controls tone-mapping="commerce" 
+                poster="/img/Picard-Camera3.png"
+                max-camera-orbit="0deg 90deg"
+                min-camera-orbit="0 deg 0deg"   
+                shadow-intensity="1">
+                <button class="Hotspot" slot="hotspot-1" data-position="0.23856272772533987m 0.02660057916654246m 0.2245101181597131m" data-normal="0.5884440936717139m 0.07417578661767776m 0.8051282514621656m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Wooden Base</div>
+                </button>
+                <button class="Hotspot" slot="hotspot-2" data-position="-0.5635206957219956m 0.5886048655518119m -0.017127011176414575m" data-normal="-0.9360704196420658m -0.04264176555175187m 0.34921891315012765m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Velvet Fabric</div>
+                </button>
+                <button class="Hotspot" slot="hotspot-3" data-position="0.21987820326627627m 0.5125008140641929m 0.04147174066045933m" data-normal="-0.7479659975920098m 0.2565822511651978m 0.6121375783540732m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Linen Fabric</div>
+                </button>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+               
+            </model-viewer>
+
+            <div class="container">
+                <h3>Picard Chair</h3>
+                <p>A chair that suits you, no matter the hue. Picard's seat is an adaptable design whith a choice of colors and texture, it effortlessly complements any office or lounge. Balancing versatily and distinction.</p>
+                <a href="#Onsilla">More Details</a>
+            </div>
+        </div>
+
+        <div class="chair" id="chairs">
+            
+            <model-viewer src="./models/Avona.glb"
+                alt="Avona Chair"
+                ar
+                camera-controls
+                
+                poster="/img/AvonaSeat-Camera.png"
+                max-camera-orbit="0deg 90deg"
+                min-camera-orbit="0 deg 0deg">
+
+                <button class="Hotspot" slot="hotspot-2" data-position="-0.430061411325097m 0.42049444346092246m -0.17586392544527696m" data-normal="0.26278415675886674m 0.13046364366684066m -0.9559935798098768m" data-visibility-attribute="visible">
+                  <div class="HotspotAnnotation">Ergonomic backrest</div>
+              </button><button class="Hotspot" slot="hotspot-3" data-position="-0.6505485943571183m 0.9004002245483474m 0.7080600964694772m" data-normal="-0.05207743942186359m 0.3742674147178598m 0.9258573554191118m" data-visibility-attribute="visible">
+                  <div class="HotspotAnnotation">Velvet Fabric</div>
+              </button>
+              <div class="progress-bar hide" slot="progress-bar">
+                  <div class="update-bar"></div>
+              </div>
+              <button slot="ar-button" id="ar-button">
+                  View in your space
+              </button>
+                </button>
+
+            </model-viewer>
+
+            <div class="container">
+                <h3>Avona Chair</h3>
+                <p>Dancing on the edge of comfort and elegance, place on the lounge, living room or any place where relaxation is the main purpose. Through this elegant design you will be able to place it in every corner.</p>
+                <a href="#Onsilla">More Details</a>
+            </div>
+
+        </div>
+
+
+        <div class="chair"id="chairs">        
+            <model-viewer src="./models/Oba.glb" 
+            alt="Oba Chair"
+            ar 
+            camera-controls
+            poster="/img/ObaSeat.png"
+            max-camera-orbit="0deg 90deg"
+            min-camera-orbit="0 deg 0deg"
+            ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" shadow-intensity="1">
+                <button class="Hotspot" slot="hotspot-1" data-position="0.1m 0.59m 0.55m" data-normal="-0.0m 0.9m -0.003m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Extra Cushion</div>
+                </button>
+            </model-viewer>
+
+            <div class="container">
+                <h3>Oba Chair</h3>
+                <p>Ergonomic privacy chair that allows you to take a freshing break from traditional workspaces. Sink into the plush cushioning and experience a new level of comfort, and take a relaxing break.</p>
+                <a href="#Onsilla">More Details</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="Onsilladetails" id="Onsilla">
+        <model-viewer id="dimension-demo" ar ar-modes="webxr" ar-scale="fixed" camera-orbit="-30deg auto auto" max-camera-orbit="auto 100deg auto" shadow-intensity="1" camera-controls touch-action="pan-y" src="../models/Onsilla.glb" tone-mapping="commerce" style="width:600px; height:500px;" alt="Onsilla 3D model.">
+            <button slot="hotspot-dot+X-Y+Z" class="dot" data-position="1 -1 1" data-normal="1 0 0"></button>
+            <button slot="hotspot-dim+X-Y" class="dim" data-position="1 -1 0" data-normal="1 0 0"></button>
+            <button slot="hotspot-dot+X-Y-Z" class="dot" data-position="1 -1 -1" data-normal="1 0 0"></button>
+            <button slot="hotspot-dim+X-Z" class="dim" data-position="1 0 -1" data-normal="1 0 0"></button>
+            <button slot="hotspot-dot+X+Y-Z" class="dot" data-position="1 1 -1" data-normal="0 1 0"></button>
+            <button slot="hotspot-dim+Y-Z" class="dim" data-position="0 -1 -1" data-normal="0 1 0"></button>
+            <button slot="hotspot-dot-X+Y-Z" class="dot" data-position="-1 1 -1" data-normal="0 1 0"></button>
+            <button slot="hotspot-dim-X-Z" class="dim" data-position="-1 0 -1" data-normal="-1 0 0"></button>
+            <button slot="hotspot-dot-X-Y-Z" class="dot" data-position="-1 -1 -1" data-normal="-1 0 0"></button>
+            <button slot="hotspot-dim-X-Y" class="dim" data-position="-1 -1 0" data-normal="-1 0 0"></button>
+            <button slot="hotspot-dot-X-Y+Z" class="dot" data-position="-1 -1 1" data-normal="-1 0 0"></button>
+            <svg id="dimLines" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" class="dimensionLineContainer">
+              <line class="dimensionLine"></line>
+              <line class="dimensionLine"></line>
+              <line class="dimensionLine"></line>
+              <line class="dimensionLine"></line>
+              <line class="dimensionLine"></line>
+            </svg>
+          
+            <div id="controls" class="dim">
+              <label for="src">Product:</label>
+              <select id="src">
+                <option value="../models/Onsilla.glb">OnSilla</option>
+                <option value="../models/Oba.glb">Oba</option>
+                <option value="../models/Picard.glb">Picard</option>
+                <option value="../models/Avona.glb">Avona</option>
+                
+                
+              </select><br>
+          
+              <label for="show-dimensions">Show Dimensions:</label>
+              <input id="show-dimensions" type="checkbox" checked="true">
+            </div>
+          </model-viewer>
+          <div class="description">
+            <h3>Dimension of the Chairs</h3>
+            <p><i>Those chairs will fit into my place? </i> <br>
+              Please select the chair you prefer to check the product dimensions of each chair.</p>
+        </div>
+          
+          <script type="module">
+            const modelViewer = document.querySelector('#dimension-demo');
+          
+            modelViewer.querySelector('#src').addEventListener('input', (event) => {
+              modelViewer.src = event.target.value;
+            });
+          
+            const checkbox = modelViewer.querySelector('#show-dimensions');
+          
+            const dimElements = [...modelViewer.querySelectorAll('button'), modelViewer.querySelector('#dimLines')];
+          
+            function setVisibility(visible) {
+              dimElements.forEach((element) => {
+                if (visible) {
+                  element.classList.remove('hide');
+                } else {
+                  element.classList.add('hide');
+                }
+              });
+            }
+          
+            checkbox.addEventListener('change', () => {
+              setVisibility(checkbox.checked);
+            });
+          
+            modelViewer.addEventListener('ar-status', (event) => {
+              setVisibility(checkbox.checked && event.detail.status !== 'session-started');
+            });
+          
+
+            function drawLine(svgLine, dotHotspot1, dotHotspot2, dimensionHotspot) {
+              if (dotHotspot1 && dotHotspot2) {
+                svgLine.setAttribute('x1', dotHotspot1.canvasPosition.x);
+                svgLine.setAttribute('y1', dotHotspot1.canvasPosition.y);
+                svgLine.setAttribute('x2', dotHotspot2.canvasPosition.x);
+                svgLine.setAttribute('y2', dotHotspot2.canvasPosition.y);
+          
+               
+                if (dimensionHotspot && !dimensionHotspot.facingCamera) {
+                  svgLine.classList.add('hide');
+                }
+                else {
+                  svgLine.classList.remove('hide');
+                }
+              }
+            }
+          
+            const dimLines = modelViewer.querySelectorAll('line');
+          
+            const renderSVG = () => {
+              drawLine(dimLines[0], modelViewer.queryHotspot('hotspot-dot+X-Y+Z'), modelViewer.queryHotspot('hotspot-dot+X-Y-Z'), modelViewer.queryHotspot('hotspot-dim+X-Y'));
+              drawLine(dimLines[1], modelViewer.queryHotspot('hotspot-dot+X-Y-Z'), modelViewer.queryHotspot('hotspot-dot+X+Y-Z'), modelViewer.queryHotspot('hotspot-dim+X-Z'));
+              drawLine(dimLines[2], modelViewer.queryHotspot('hotspot-dot+X+Y-Z'), modelViewer.queryHotspot('hotspot-dot-X+Y-Z')); // always visible
+              drawLine(dimLines[3], modelViewer.queryHotspot('hotspot-dot-X+Y-Z'), modelViewer.queryHotspot('hotspot-dot-X-Y-Z'), modelViewer.queryHotspot('hotspot-dim-X-Z'));
+              drawLine(dimLines[4], modelViewer.queryHotspot('hotspot-dot-X-Y-Z'), modelViewer.queryHotspot('hotspot-dot-X-Y+Z'), modelViewer.queryHotspot('hotspot-dim-X-Y'));
+            };
+          
+            modelViewer.addEventListener('load', () => {
+              const center = modelViewer.getBoundingBoxCenter();
+              const size = modelViewer.getDimensions();
+              const x2 = size.x / 2;
+              const y2 = size.y / 2;
+              const z2 = size.z / 2;
+          
+              modelViewer.updateHotspot({
+                name: 'hotspot-dot+X-Y+Z',
+                position: `${center.x + x2} ${center.y - y2} ${center.z + z2}`
+              });
+          
+              modelViewer.updateHotspot({
+                name: 'hotspot-dim+X-Y',
+                position: `${center.x + x2 * 1.2} ${center.y - y2 * 1.1} ${center.z}`
+              });
+              modelViewer.querySelector('button[slot="hotspot-dim+X-Y"]').textContent =
+                  `${(size.z * 100).toFixed(0)} cm`;
+          
+              modelViewer.updateHotspot({
+                name: 'hotspot-dot+X-Y-Z',
+                position: `${center.x + x2} ${center.y - y2} ${center.z - z2}`
+              });
+          
+              modelViewer.updateHotspot({
+                name: 'hotspot-dim+X-Z',
+                position: `${center.x + x2 * 1.2} ${center.y} ${center.z - z2 * 1.2}`
+              });
+              modelViewer.querySelector('button[slot="hotspot-dim+X-Z"]').textContent =
+                  `${(size.y * 100).toFixed(0)} cm`;
+          
+              modelViewer.updateHotspot({
+                name: 'hotspot-dot+X+Y-Z',
+                position: `${center.x + x2} ${center.y + y2} ${center.z - z2}`
+              });
+          
+              modelViewer.updateHotspot({
+                name: 'hotspot-dim+Y-Z',
+                position: `${center.x} ${center.y + y2 * 1.1} ${center.z - z2 * 1.1}`
+              });
+              modelViewer.querySelector('button[slot="hotspot-dim+Y-Z"]').textContent =
+                  `${(size.x * 100).toFixed(0)} cm`;
+          
+              modelViewer.updateHotspot({
+                name: 'hotspot-dot-X+Y-Z',
+                position: `${center.x - x2} ${center.y + y2} ${center.z - z2}`
+              });
+          
+              modelViewer.updateHotspot({
+                name: 'hotspot-dim-X-Z',
+                position: `${center.x - x2 * 1.2} ${center.y} ${center.z - z2 * 1.2}`
+              });
+              modelViewer.querySelector('button[slot="hotspot-dim-X-Z"]').textContent =
+                  `${(size.y * 100).toFixed(0)} cm`;
+          
+              modelViewer.updateHotspot({
+                name: 'hotspot-dot-X-Y-Z',
+                position: `${center.x - x2} ${center.y - y2} ${center.z - z2}`
+              });
+          
+              modelViewer.updateHotspot({
+                name: 'hotspot-dim-X-Y',
+                position: `${center.x - x2 * 1.2} ${center.y - y2 * 1.1} ${center.z}`
+              });
+              modelViewer.querySelector('button[slot="hotspot-dim-X-Y"]').textContent =
+                  `${(size.z * 100).toFixed(0)} cm`;
+          
+              modelViewer.updateHotspot({
+                name: 'hotspot-dot-X-Y+Z',
+                position: `${center.x - x2} ${center.y - y2} ${center.z + z2}`
+              });
+          
+              renderSVG();
+          
+              modelViewer.addEventListener('camera-change', renderSVG);
+            });
+          </script>
+          
+    </div>
+
+
+
+
+
 </body>
+</html> 
 </html>

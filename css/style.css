@@ -11,7 +11,7 @@ body{
     min-height: 72rem;
     background-size: cover;
     background-position: center;
-    width: 100%;
+    max-width: 100%;
 }
 
 nav {
@@ -153,6 +153,10 @@ model-viewer {
   font-family: 'Outfit';
   font-weight: 400;
   }
+  #dimension-demo{
+    width:600px; 
+    height:500px;
+  }
   .dim{
     background: #fff;
     border-radius: 4px;
@@ -211,3 +215,35 @@ model-viewer {
     margin-left: 10%;
   }
 
+  @media screen and (max-width:900px){
+
+nav{
+  display: none;
+}
+
+.hero{
+  min-height: 20rem;
+}
+
+.gallery{
+  display: flex;
+  flex-direction: column;
+}
+.chair{
+  font-size: 18px;
+}
+.container a{
+  font-size: 19px;
+}
+.Onsilladetails{
+  display: flex;
+  flex-direction: column;
+}
+#dimension-demo{
+  width: 300px;
+  height: 300px;
+}
+.description{
+  font-size: 1.2rem;
+}
+  }
